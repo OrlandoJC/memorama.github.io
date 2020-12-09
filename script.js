@@ -126,62 +126,62 @@
 
     var cards = [{
             name: "costoVentas",
-            img: "../src/imgs/CostosDeVentas.png",
+            img: "imgs/CostosDeVentas.png",
             id: 1,
         },
         {
             name: "utilidadNeta",
-            img: "../src/imgs/UtilidadNeta.png",
+            img: "imgs/UtilidadNeta.png",
             id: 2
         },
         {
             name: "ventasNetas",
-            img: "../src/imgs/VentasNetas.png",
+            img: "imgs/VentasNetas.png",
             id: 3
         },
         {
             name: "Depreciacion",
-            img: "../src/imgs/Depreciacion.png",
+            img: "imgs/Depreciacion.png",
             id: 4
         },
         {
             name: "estadoDeResultados",
-            img: "../src/imgs/EstadoResult.png",
+            img: "imgs/EstadoResult.png",
             id: 5
         },
         {
             name: "gastoAdmin",
-            img: "../src/imgs/GastosAdministrativos.png",
+            img: "imgs/GastosAdministrativos.png",
             id: 6
         },
         {
             name: "utilidadBruta",
-            img: "../src/imgs/UtilidadBruta.png",
+            img: "imgs/UtilidadBruta.png",
             id: 7
         },
         {
             name: "utilidadAntImpuestos",
-            img: "../src/imgs/1.png",
+            img: "imgs/1.png",
             id: 8
         },
         {
             name: "utilidadOp",
-            img: "../src/imgs/2.png",
+            img: "imgs/2.png",
             id: 9
         },
         {
             name: "gastosDeVenta",
-            img: "../src/imgs/3.png",
+            img: "imgs/3.png",
             id: 10
         },
         {
             name: "impuestos",
-            img: "../src/imgs/4.png",
+            img: "imgs/4.png",
             id: 11
         },
         {
             name: "intereses",
-            img: "../src/imgs/5.png",
+            img: "imgs/5.png",
             id: 12
         },
     ];
