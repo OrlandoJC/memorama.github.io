@@ -10,6 +10,7 @@
     var fail = new Audio("music/Fail-sound.mp3")
     var timerAudio = new Audio("music/Timer-clicking-sound.mp3")
     var temp = false;
+    var win = false;
 
     var seg = 0;
 
@@ -109,13 +110,16 @@
 
                 if (intentos == 29 && temp == false) {
                     _.win(false);
-
+                    win = false
                     return;
                 }
 
 
                 if ($(".matched").length == $(".card").length) {
-                    _.win(true);
+                    win = true;
+                    if (temp == false) {
+                        _.win(true);
+                    }
                 }
             }
         },
@@ -125,6 +129,12 @@
             this.paused = true;
             setTimeout(function() {
 
+                if (temp) {
+
+                    timerAudio.pause();
+                    timerAudio.currentTime = 0;
+
+                }
                 if (!status) {
                     that.$message.text("Perdiste! :(");
                     gameOver.play();
@@ -156,15 +166,10 @@
             intentos = 0;
             seg = 0;
             adivinados = 0;
-
+            win = false
 
             clearInterval(this.timerSet);
             temp = false;
-
-
-
-
-
 
         },
 
@@ -210,13 +215,22 @@
                 x = minutes < 10 ? "0" + minutes : minutes,
                 y = seconds < 10 ? "0" + seconds : seconds;
 
-            if (seg == 114) {
-                timerAudio.currentTime = 0;
-                timerAudio.pause();
+            if (seg == 114 && win == false) {
+
 
                 _.win(false);
 
                 return;
+            } else {
+
+                if (seg < 114 && win == true) {
+
+
+                    _.win(true);
+
+                    return
+                }
+
             }
             console.log(Memory.$reloj.text(x + " : " + y))
         }
