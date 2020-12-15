@@ -215,7 +215,7 @@
                 x = minutes < 10 ? "0" + minutes : minutes,
                 y = seconds < 10 ? "0" + seconds : seconds;
 
-            if (seg == 5 && win == false) {
+            if (seg == 114 && win == false) {
 
 
                 _.win(false);
@@ -223,7 +223,7 @@
                 return;
             } else {
 
-                if (seg < 5 && win == true) {
+                if (seg < 114 && win == true) {
 
 
                     _.win(true);
