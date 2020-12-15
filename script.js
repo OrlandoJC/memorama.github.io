@@ -131,6 +131,7 @@
 
                 if (temp) {
 
+                    clearInterval(this.timerSet);
                     timerAudio.pause();
                     timerAudio.currentTime = 0;
 
@@ -141,6 +142,8 @@
                 } else {
                     winAudio.play();
                 }
+
+
                 Memory.showModal();
                 Memory.$game.fadeOut();
             }, 1000);
@@ -168,7 +171,7 @@
             adivinados = 0;
             win = false
 
-            clearInterval(this.timerSet);
+
             temp = false;
 
         },
