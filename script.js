@@ -130,8 +130,7 @@
             setTimeout(function() {
 
                 if (temp) {
-
-                    clearInterval(this.timerSet);
+                    clearInterval(that.timerSet);
                     timerAudio.pause();
                     timerAudio.currentTime = 0;
 
@@ -170,8 +169,6 @@
             seg = 0;
             adivinados = 0;
             win = false
-
-
             temp = false;
 
         },
@@ -218,7 +215,7 @@
                 x = minutes < 10 ? "0" + minutes : minutes,
                 y = seconds < 10 ? "0" + seconds : seconds;
 
-            if (seg == 114 && win == false) {
+            if (seg == 5 && win == false) {
 
 
                 _.win(false);
@@ -226,7 +223,7 @@
                 return;
             } else {
 
-                if (seg < 114 && win == true) {
+                if (seg < 5 && win == true) {
 
 
                     _.win(true);
