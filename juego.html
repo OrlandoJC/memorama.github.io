@@ -3,17 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Memory Game</title>
+    <title> 🖋Memorama Estados financieros</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anton'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="./style.css">
 
+
 </head>
 
 <body>
 
+    <div class="details">
+        <div class="info">
+
+            <div class="intentos">
+                <p> Intentos : <span id=intentos>0</span></p>
+            </div>
+            <div class="puntos">
+                <p> correctos : <span id=correctos>0</span></p>
+            </div>
+            <div class="reloj" id="reloj">
+                <p> <span>Temporizador</span></p>
+            </div>
+        </div>
+    </div>
 
     <div class="wrap">
         <div class="game"></div>
@@ -21,7 +36,7 @@
         <div class="modal-overlay">
             <div class="modal">
                 <h2 class="winner"> Ganaste!</h2>
-                <button class="restart"> ¿Quieres jugar de nuevo?</button>
+                <button class="restart"> Jugar otra vez</button>
                 <p class="message"> Desarrollado por el equipo 8 </p>
             </div>
         </div>
@@ -29,6 +44,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="./script.js"></script>
+
 
 </body>
 
